@@ -1,0 +1,34 @@
+{
+  "name": "nodebb-theme-altisdev",
+  "version": "1.0.0",
+  "nbbpm": {
+    "compatibility": "^1.1.1"
+  },
+  "description": "AltisDev Material Design based on NodeBB Material",
+  "main": "theme.less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/breakingrobot/nodebb-theme-altisdev"
+  },
+  "keywords": [
+    "nodebb",
+    "material",
+    "material design",
+    "altisdev",
+    "theme",
+    "themes"
+  ],
+  "author": {
+    "name": "pichalite",
+    "email": "pichalite.com@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "darobot",
+      "email": "tbriet@gmail.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/breakingrobot/nodebb-theme-altisdev/issues"
+  }
+}

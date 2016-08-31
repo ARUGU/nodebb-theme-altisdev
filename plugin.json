@@ -1,0 +1,26 @@
+{
+	"id": "nodebb-theme-altisdev",
+	"library": "./lib/theme.js",
+	"hooks": [
+		{
+			"hook": "static:app.load", "method": "init"
+		},
+		{
+			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
+		},
+		{
+			"hook": "filter:config.get", "method": "getConfig"
+		},
+		{
+			"hook": "static:assets.prepare", "method": "modifyLessVar"
+		}
+	],
+	"scripts": [
+		"lib/material.js",
+		"lib/vendor/waves.min.js"
+	],
+	"acpScripts": [
+		"lib/admin.js"
+	],
+	"templates": "./templates"
+}
