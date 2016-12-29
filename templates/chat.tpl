@@ -9,18 +9,16 @@
  				</div>
 			</div>
 			<div class="modal-body">
-				<span class="since-bar">
-				<a href="#" class="selected" data-since="recent">[[recent:title]]</a> &bull; <a href="#" data-since="week">[[modules:chat.seven_days]]</a> &bull; <a href="#" data-since="month">[[modules:chat.thirty_days]]</a> &bull; <a href="#" data-since="threemonths">[[modules:chat.three_months]]</a></span>
 				<ul class="chat-content lv-body" component="chat/messages">
-					
+					<!-- IMPORT partials/chats/messages.tpl -->
 				</ul>
 
 				<div class="chat-footer input-group">
 					<div class="fg-line">
-						<textarea component="chat/input" id="chat-message-input" rows="1" placeholder="[[modules:chat.placeholder]]" name="chat-message" class="form-control"></textarea>
+						<textarea component="chat/input" id="chat-message-input" rows="1" placeholder="[[modules:chat.placeholder]]" name="chat-message" class="form-control" <!-- IF !canReply -->readonly<!-- ENDIF !canReply -->></textarea>
 					</div>
 					<div class="input-group-btn">
-						<button id="chat-message-send-btn" class="btn btn-link btn-primary" href="#" type="button">[[modules:chat.send]]</button>
+						<button id="chat-message-send-btn" class="btn btn-link btn-primary" href="#" type="button" <!-- IF !canReply -->disabled<!-- ENDIF !canReply -->>[[modules:chat.send]]</button>
 					</div>
 				</div>
 			</div>
