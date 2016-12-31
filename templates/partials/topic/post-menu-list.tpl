@@ -45,6 +45,9 @@
 <li class="divider"></li>
 
 <!-- IF config.loggedIn -->
+<!-- IF posts.selfPost -->
+<li><a component="post/edit" href="#"><i class="fa fa-pencil"></i> [[topic:edit]]</a></li>
+<!-- ENDIF posts.selfPost -->
 <!-- IF !posts.selfPost -->
 <li><a component="post/flag" href="#">[[topic:flag_title]]</a></li>
 <!-- ENDIF !posts.selfPost -->
