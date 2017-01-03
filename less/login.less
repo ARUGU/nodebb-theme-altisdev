@@ -5,7 +5,7 @@
 	.login-block, .register-block {
 		border-radius: 2px;
 		padding: 25px 55px;
-		width: 500px;
+		width: auto;
 		display: inline-block;
 		vertical-align: middle;
 		position: relative;
@@ -20,6 +20,13 @@
 			margin: 5px 5px 15px;
 			text-align: left;
 		}
+	}
+
+	.register-div {
+		padding: 5px 10px;
+		border-radius: 20px;
+		margin-bottom: 20px;
+		background-color: #FFFFFF;
 	}
 
 	.login-block {
@@ -39,6 +46,10 @@
 			margin-right: 5px;
 			margin-left: 5px;
 		}
+	}
+
+	.input-group {
+		margin-bottom: 20px;
 	}
 }
 
@@ -66,7 +77,7 @@ div.login, div.register {
 	.login-options, .register-options {
 		margin-top: 10px;
 	}
-	
+
 	.input-group-addon {
 		color: @body-color;
 	}
@@ -118,7 +129,7 @@ div.login, div.register {
 	    -webkit-background-size: 1.25rem 1.25rem;
 	    background-size: 1.25rem 1.25rem;
 	}
-	
+
 	.register-feedback {
 		color: @material-success;
 		display: block;
@@ -137,11 +148,15 @@ div.login, div.register {
 	    -webkit-background-size: 1.25rem 1.25rem;
 	    background-size: 1.25rem 1.25rem;
 	}
-	
+
 	.register-feedback {
 		color: @material-danger;
 		display: block;
 		margin-top: .25rem;
 		font-size: 12px;
 	}
+}
+i.fa-mobile {
+	font-size: 1.50em;
+  width: 1em;
 }
